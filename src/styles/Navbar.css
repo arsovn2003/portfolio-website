@@ -1,0 +1,44 @@
+nav {
+    background-color: #292d3e;
+    text-transform: uppercase;
+}
+
+nav a {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+nav a {
+    padding: .5em .8em;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a::before,
+nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+nav a:hover {
+    color: yellow;
+}
